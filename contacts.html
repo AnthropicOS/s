@@ -4,14 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootswatch/dist/solar/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="node_modules/tom-select/dist/css/tom-select.min.css">
+    <link rel="stylesheet" href="node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/tinymce/tinymce.min.js"></script>
     <script src="node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
     <title>Document</title>
 </head>
+
+<style>
+        
+        .form-container {
+            max-width: 650px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .ts-wrapper.multi .ts-control {
+            padding-top: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .custom-label-fix {
+            margin-bottom: 0.5rem;
+            color: #212529;
+        }
+    </style>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
@@ -24,7 +45,7 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home
+                        <a class="nav-link active" href="index.html">Home
                             <span class="visually-hidden">(current)</span>
                         </a>
                     </li>
@@ -57,8 +78,61 @@
         </div>
     </nav>
 
+    
 
 
+<div class="container" style="margin: 40px;">
+    <div class="form-container ">
+        <h2 class="mb-4 text-center">Dotazy do studia</h2>
+        
+        <form enctype="multipart/form-data" class="needs-validation">
+            
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="mail" name="mail" required>
+                <label for="jmeno">E-mail</label>
+            </div>
+
+            <div class="mb-3 position-relative">
+                <label for="chyby" class="form-label custom-label-fix">Typ chyby</label>
+                <select id="chyby" name="chyby[]" multiple placeholder="Vyberte chybu..." autocomplete="off" required>
+                    <option value="G">Glitch</option>
+                    <option value="NV">Nezdokumentovaná vlastnost</option>
+                    <option value="S">Stížnost</option>
+                    <option value="VB">Vlastní blbost</option>
+                    <option value="D">Dotaz</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="motivace" class="form-label custom-label-fix">Text</label>
+                <textarea id="motivace" name="motivace" placeholder="Piš ty mamlas!!!"></textarea>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Odeslat dotaz</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script>
+    
+    tinymce.init({
+    selector: '#motivace',
+    license_key: 'gpl',
+    height: 300,
+    menubar: false,
+    branding: false,
+    })
+
+    new TomSelect('#chyby', {
+    plugins: ['remove_button'],
+    create: false,
+    placeholder: 'Vyberte chybu...'
+});
+    
+</script>
 
 
 
