@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Informace o hře
+                        <a class="nav-link" href="index.html">Informace o hře
                             <span class="visually-hidden">(current)</span>
                         </a>
                     </li>
@@ -35,39 +35,44 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contacts.html">Kontakt</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="forms.html">Formy</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                             aria-haspopup="true" aria-expanded="false">Jiné</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Progress</a>
-                            <a class="dropdown-item" href="#">Dokumentace</a>
+                            <a class="dropdown-item active" href="progress.html">Progress</a>
+                            <a class="dropdown-item" href="Dokumentace webu.pdf " target="_blank">Dokumentace</a>
                         </div>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
 
-    <h1 class="text-center" style="margin: 40px;">Průbeh práce</h1>
+    <h1 class="text-center" style="margin: 40px; color: white;">Průběh práce</h1>
 
     <div class="progress" style="margin: 40px;">
-        <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0"
-            aria-valuemax="100"> Domča </div>
-        <div class="progress-bar bg-info" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0"
-            aria-valuemax="100"> Ptáček </div>
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0"
-            aria-valuemax="100"> Jarabák </div>
-        <div class="progress-bar bg-light" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
-            aria-valuemax="100"> Rofl </div>
-        <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
-            aria-valuemax="100"> 29.9 </div>
+        <div class="progress-bar" role="progressbar" style="width: 15%; color: white;" aria-valuenow="15" aria-valuemin="0"
+            aria-valuemax="100"> 8.9. - Začátek a struktura </div>
+        <div class="progress-bar bg-info" role="progressbar" style="width: 30%; color: white;" aria-valuenow="30" aria-valuemin="0"
+            aria-valuemax="100"> 9.9. - Obrázky </div>
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%; color: white;" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100"> 12.9. - Tabulka </div>
+        <div class="progress-bar bg-info" role="progressbar" style="width: 40%; color: white;" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100"> 14.9. - Footer, Carousel a úpravy </div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 40%; color: white;" aria-valuenow="40" aria-valuemin="0"
+            aria-valuemax="100"> 15.9. - Dokumentace a Hosting</div>
+    </div>
+
+<div class="container">
+        <p class="text-center" style="color: white; font-size: 20px;">Na projektu bylo naplakáno mnoho řek slz a vydřeny hodiny práce bez použití AI.
+            <br> <br>
+             Na tvorbě webových stránek jsem pracoval systematicky a s velkým nasazením po dobu jednoho týdne. Celý projekt odstartoval 8. září, kdy jsem pečlivě navrhl a sestavil základní HTML strukturu celého webu. Následující den jsem stránky oživil vhodným vizuálním obsahem a optimalizovanými obrázky. O několik dní později, 12. září, jsem do layoutu precizně zapracoval přehlednou tabulku pro zobrazení dat.
+             <br> <br> Závěrečná fáze vývoje proběhla 14. září integrací dynamického carouselu, patičky a doladěním všech detailů. Celé úsilí jsem úspěšně završil 15. září sepsáním kompletní dokumentace a nahráním funkčního projektu na hosting.<br> <br> Nikomu nedoporučuji tvořit webové stránky bez použití AI, protože to je velmi náročné a vyžaduje to hodně času a úsilí. <br> <br> Celkově lze říci, že jsem během tohoto týdne získal cenné zkušenosti a dovednosti v oblasti webového vývoje, které mi budou jistě užitečné v budoucnu.
+              Zároveň jsem si vyzkoušel tvorbu formulářů a interaktivních prvků. Při dokončování projektu jsem kontroloval také odkazy, vzhled jednotlivých stránek a jejich čitelnost na různých velikostech obrazovky. Projekt mi ukázal, že kvalitní web vzniká  průběžným testováním, opravováním a promyšleným zpracováním obsahu.
+             
+            </p>
+
+    </div>
     </div>
 
 
@@ -75,17 +80,19 @@
 
 
 
-
-    <footer style="background-color: teal; width: 100%;">
+    <footer style="width: 100%;" class="bg-primary">
         <div class="p-5 text-left mt-5">
             <h2 style="color: white;">Kontakt na podporu</h2>
             <p style="color: white;">E-mail: <a href="riotsupport@riot.com"
-                    style="color: white;">riotsupport@riot.com</a><span style="margin-left: 50px;"> Address: 7 - 11 Sir
+                    style="color: white;">riotsupport@riot.com</a>
+                <span style="margin-left: 50px;"> Address: 7 - 11 Sir
                     John Rogerson's Quay,
                     Dublin 2,
                     Ireland.
-                </span></p>
-
+                </span>
+            </p>
+                 <a href="Dokumentace webu.pdf" target="_blank"
+                    style="color: white;">Dokumentace</a>
         </div>
     </footer>
 

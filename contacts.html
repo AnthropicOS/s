@@ -23,6 +23,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+
+        .form-control,
+        .ts-control, /*tomselect*/
+        .tox-tinymce,
+        .ts-dropdown {
+            background-color: #ffffff;
+        }
         
         .ts-wrapper.multi .ts-control {
             padding-top: 1.5rem;
@@ -37,7 +44,8 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="index.html"><img src="img/league.png" alt="League"
+                    style="max-width: 70px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
                 aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,51 +53,41 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home
+                        <a class="nav-link" href="index.html">Informace o hře
                             <span class="visually-hidden">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="champs.html">Šampioni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link active" href="contacts.html">Kontakt</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            aria-haspopup="true" aria-expanded="false">Jiné</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
+                            <a class="dropdown-item" href="progress.html">Progress</a>
+                            <a class="dropdown-item" href="Dokumentace webu.pdf " target="_blank">Dokumentace</a>
                         </div>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
 
-    
+    <h1 style="text-align: center; margin: 30px; color: white;">Kontakt na vývojáře</h1>
+    <p style="color: white; text-align: center;">Máte dotaz k hře? Napište nám!</p>
 
-
-<div class="container" style="margin: 40px;">
+<div class="container col-sm-4 offset-4" >
     <div class="form-container ">
-        <h2 class="mb-4 text-center">Dotazy do studia</h2>
+        <h2 class="mb-4 text-center">Dotazy do studia <i class="fa-solid fa-inbox"></i></h2>
         
         <form enctype="multipart/form-data" class="needs-validation">
             
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="mail" name="mail" required>
-                <label for="jmeno">E-mail</label>
+            <div class="form-floating mb-3 position-relative">
+                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="email"><i class="fa-regular fa-envelope"></i> E-mail</label>
             </div>
 
             <div class="mb-3 position-relative">
@@ -137,13 +135,19 @@
 
 
 
-    <footer style="background-color: teal; width: 100%;">
+    <footer style="width: 100%;" class="bg-primary">
         <div class="p-5 text-left mt-5">
-            <h2 style="color: white;">Kontakt na organizátora</h2>
-            <p style="color: white;">E-mail: <a href="mailto:zdenekhrdina@oauh.cz"
-                    style="color: white;">zdenekhrdina@oauh.cz</a><span style="margin-left: 50px;"> Telefon: +420 123
-                    456 789</span></p>
-
+            <h2 style="color: white;">Kontakt na podporu</h2>
+            <p style="color: white;">E-mail: <a href="riotsupport@riot.com"
+                    style="color: white;">riotsupport@riot.com</a>
+                <span style="margin-left: 50px;"> Address: 7 - 11 Sir
+                    John Rogerson's Quay,
+                    Dublin 2,
+                    Ireland.
+                </span>
+            </p>
+                 <a href="Dokumentace webu.pdf" target="_blank"
+                    style="color: white;">Dokumentace</a>
         </div>
     </footer>
 
