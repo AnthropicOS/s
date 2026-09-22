@@ -20,23 +20,23 @@
             max-width: 650px;
             background: #ffffff;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 10px; /*zakulaceni*/
+            
         }
 
         .form-control,
         .ts-control, /*tomselect*/
-        .tox-tinymce,
+        .tox-tinymce, /*tinymce*/
         .ts-dropdown {
             background-color: #ffffff;
         }
         
-        .ts-wrapper.multi .ts-control {
-            padding-top: 1.5rem;
-            padding-bottom: 0.5rem;
+        .ts-wrapper.multi .ts-control { /*formatovani vice vyberu v tomselectu*/
+            padding-top: 24px;
+            padding-bottom: 8px;
         }
-        .custom-label-fix {
-            margin-bottom: 0.5rem;
+        .custom-label-fix { /*formatovani pole ve wisywigu*/
+            margin-bottom: 8px;
             color: #212529;
         }
     </style>
@@ -125,9 +125,9 @@
     })
 
     new TomSelect('#chyby', {
-    plugins: ['remove_button'],
-    create: false,
-    placeholder: 'Vyberte chybu...'
+    plugins: ['remove_button'], /*odstraneni vyberu*/
+    create: false, /* nemuze se vytvorit dalsi*/
+    placeholder: 'Vyberte chybu...' /*default zobrazeni*/
 });
     
 </script>
